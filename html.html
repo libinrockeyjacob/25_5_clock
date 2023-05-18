@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css.css" rel="stylesheet"/>
+    <script src="./clock.js"></script>
+
+    <title>Counter Clock</title>
+  </head>
+
+  <body>
+    
+      <div style='background-color:#666b7a;width:50%;margin:auto;' >
+        
+            <!-- Break Length -->
+    
+      <div style="display:inline-block;background:black">
+      <div>
+        <label id='break-label'>Break Length</label>
+      </div> 
+      <div>
+        <button onclick='decrementing("break")' id="break-decrement">&darr;</button> 
+      <button onclick='incrementing("break")' id="break-increment">&uarr;</button>
+      </div>
+        <div>
+          <label id='break-length' value="5">5</label>
+        </div>
+      </div>
+        
+        <!-- Session Length -->
+        
+      <div style="display:inline-block;margin:20px;background:black;">
+      <div>
+      <label id='session-label'>Session Length</label>
+      </div>
+      <div>
+      <button onclick='decrementing("session")' id="session-decrement">&darr;</button>
+      <button onclick='incrementing("session")' id="session-increment">&uarr;</button> 
+      </div>
+        <div>
+          <label  id='session-length' value="25">25</label>
+        </div>
+      </div>
+      </div>
+      
+      <!--Above is the Break Length and Session Length -->
+    
+      <div style=" width: 50%; margin:auto;height: 100px;margin-top:40px">
+          <label id='timer-label'>SESSION</label>
+        <div style="background:purple;margin:20px;letter-spacing:1px;height:40px;">
+          <label type="time" id="time-left">25:00</label>
+        </div>
+      </div>
+      
+      <button id="start_stop" onclick="startstopbutton()">START-STOP</button>
+      <button id='reset' onclick="resetTimer()">RESET</button>
+    
+    </body>
+
+</html>
