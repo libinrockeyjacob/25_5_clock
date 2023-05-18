@@ -5,6 +5,8 @@ let reset = document.getElementById('reset');
 let breaklength = document.getElementById('break-length'); 
 let sessionlength = document.getElementById('session-length');
 let timeleft = document.getElementById('time-left');
+breaklength.innerText   = 5
+sessionlength.innerText = 25
 let play = false;
 let a;
 let min = 25;
